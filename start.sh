@@ -12,7 +12,7 @@ if [ ! $nfs_mount ]; then
   echo ""
 
   echo "EXAMPLE:"
-  echo "docker run -privileged -e NFS_MOUNT=nas:/mnt/biggins/music -p 6600:6600 -p 8000:8000 -t natlownes/mpd"
+  echo "docker run -privileged -e NFS_MOUNT=nas:/mnt/biggins/music -p 6600:6600 -p 8000:8000 -t narf/mpd"
   echo ""
   exit 1
 fi
