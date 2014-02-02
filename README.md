@@ -1,4 +1,4 @@
-# natlownes-mpd
+# narf-mpd
 
 a Docker container for running mpd on nfs shares
 
