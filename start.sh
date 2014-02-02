@@ -1,15 +1,19 @@
 #!/bin/bash
 
-env
-
 # example nas:/mnt/biggins/music
 nfs_mount=${NFS_MOUNT}
 mountpoint="/var/lib/mpd/music"
 
 if [ ! $nfs_mount ]; then
+  echo ""
   echo "***************************************"
   echo "must set NFS_MOUNT environment variable"
   echo "***************************************"
+
+  echo ""
+  echo "EXAMPLE:"
+  echo "docker run -privileged -e NFS_MOUNT=nas:/mnt/biggins/music -P=true -t natlownes/mpd"
+  echo ""
   exit 1
 fi
 

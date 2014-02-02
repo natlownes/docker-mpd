@@ -14,9 +14,6 @@ ADD start.sh /home/mpd/start.sh
 
 RUN chmod +x /home/mpd/start.sh
 
-# change for your setup or override using -e
-ENV NFS_MOUNT nas:/mnt/biggins/music
-
 EXPOSE 6600 8000
 
 ENTRYPOINT /home/mpd/start.sh
